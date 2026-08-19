@@ -1,1 +1,210 @@
-# mi-biografia-
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Biografía</title>
+
+  <style>
+    body {
+      background-color: #fce4ec;
+      font-family: Georgia, serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(194, 24, 91, 0.2);
+      color: #4a2633;
+    }
+
+    h1 {
+      color: #880e4f;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    h2 {
+      color: #ad1457;
+      border-bottom: 3px solid #c2185b;
+      padding-bottom: 8px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 50%;
+      border: 4px solid #c2185b;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    a {
+      color: #c2185b;
+    }
+
+    li {
+      margin: 8px 0;
+    }
+
+    /* SECCIÓN MI MÚSICA FAVORITA */
+
+    .musica-favorita {
+      margin-top: 40px;
+      padding: 30px 20px;
+      background-color: #f8bbd0;
+      text-align: center;
+      border-radius: 20px;
+      border: 3px solid #c2185b;
+    }
+
+    .musica-favorita h1 {
+      color: #880e4f;
+      font-size: 42px;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px 0 #fce4ec;
+    }
+
+    .musica-favorita h1::after {
+      content: " ♡ ♡ ♡ ";
+      display: block;
+      color: #ad1457;
+      font-size: 20px;
+      margin-top: 8px;
+    }
+
+    .canciones {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .cancion {
+      width: 180px;
+      padding: 20px;
+      background-color: #fff8fa;
+      border: 2px solid #c2185b;
+      border-radius: 15px;
+      box-shadow: 0 5px 12px rgba(136, 14, 79, 0.2);
+    }
+
+    .cancion h3 {
+      color: #880e4f;
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .cancion a {
+      display: inline-block;
+      padding: 9px 12px;
+      background-color: #c2185b;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .cancion a:hover {
+      background-color: #880e4f;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>¡Hola! Soy Mia Albornoz</h1>
+
+  <h2>SOBRE MÍ</h2>
+
+  <p>
+    Esta es mi primera página web.
+  </p>
+
+  <p>
+    Tengo 14 años, vivo en Córdoba Capital. Actualmente vivo con mis papás,
+    mi hermana menor y mis 3 mascotas. En mi tiempo libre me gusta leer,
+    en especial libros de romance y/o fantasía, escuchar música y cocinar.
+  </p>
+
+  <img
+    src="https://i.pinimg.com/236x/58/92/ec/5892ec1d28d751540e7dceed57162638.jpg"
+    alt="Mi foto">
+
+  <p>
+    Mi Instagram:
+    <a href="https://instagram.com/miuchii.00" target="_blank">
+      @miuchii.00
+    </a>
+  </p>
+
+  <h2>MIS GUSTOS</h2>
+
+  <ul>
+    <li>Leer.</li>
+    <li>Cocinar.</li>
+    <li>Escuchar música.</li>
+  </ul>
+
+  <h2>MI FUTURO</h2>
+
+  <p>
+    Ir a la universidad, hacer una carrera y luego de eso obtener un trabajo
+    que genere ingresos, conocer el mundo, casarme, tener 2 hijos y poder
+    darles una vida cómoda y estable.
+  </p>
+
+  <h2>5 AÑOS A FUTURO</h2>
+
+  <p>
+    En 5 años a futuro me imagino en la universidad, recién iniciando mi carrera.
+  </p>
+
+
+  <!-- MI MÚSICA FAVORITA -->
+
+  <section class="musica-favorita">
+
+    <h1>MI MÚSICA FAVORITA</h1>
+
+    <div class="canciones">
+
+      <div class="cancion">
+        <h3>Manchild - Sabrina Carpenter</h3>
+
+        <a href="https://www.youtube.com/watch?v=aSugSGCC12I"
+           target="_blank"
+           rel="noopener noreferrer">
+          Escuchar en YouTube
+        </a>
+      </div>
+
+
+      <div class="cancion">
+        <h3>Solo por vos-Trueno</h3>
+
+        <a href="https://www.youtube.com/watch?v=2aksg6gYUU4"
+           target="_blank"
+           rel="noopener noreferrer">
+          Escuchar en YouTube
+        </a>
+      </div>
+
+
+      <div class="cancion">
+        <h3>Necio-Romeo Santos</h3>
+
+        <a href="https://www.youtube.com/watch?v=DXiXPhvYuNU"
+           target="_blank"
+           rel="noopener noreferrer">
+          Escuchar en YouTube
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+</body><button onclick="mostrarFuturo()">🔮 Ver mi futuro</button> <p id="mensaje"></p> <script> function mostrarFuturo() { document.getElementById('mensaje').innerHTML = '🚀 ¡Seré un gran programador/a en 2030!'; } </script><body></body>
+
+</html><script> function mostrarFuturo() { const mensajes = [ ' ¡Lograre terminar mis estudios!', ' Viajaré por todo el mundo.', ' Tendré mi propia empresa.', 'Ayudare a las personas que lo necesiten.', ' Viajare al parque tematico de Harry Potter.', 'Ire a todos los conciertos posibles.' ]; const indice = Math.floor(Math.random() * mensajes.length); document.getElementById('mensaje').innerHTML = mensajes[indice]; } </script>
+
